@@ -9,7 +9,7 @@ int PawnMoveBlack ();
 
 int main()
 {	
-	char con;
+
 	char A[10][10];
 	layout(A);
 	output(A);
@@ -68,12 +68,6 @@ int main()
 		hod = PawnMove(y, x, y1, x1, A, hod);
 		
 		output(A);
-		printf("\n\nExit? (print 'y')\n");
-		scanf(" %c", &con);
-		if (con == 'y')
-		{
-			return 0;
-		}
 	}
 	return 0;
 }
