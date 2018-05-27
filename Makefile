@@ -4,7 +4,7 @@ program: build/main.o build/layout.o build/output.o build/move.o bin
 	gcc -Wall -Werror build/main.o build/layout.o build/output.o build/move.o -lm -o bin/program
 
 test: build/main_test.o build/layout.o build/move.o bin
-	gcc build/main_test.o build/layout.o build/move.o -lm -o bin/test
+	gcc -Wall -Werror build/main_test.o build/layout.o build/move.o -lm -o bin/test
 
 build/main.o: src/main.c build
 	gcc -Wall -Werror -c src/main.c -o build/main.o
